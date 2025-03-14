@@ -1,5 +1,7 @@
-Touch Code
-Overview
+<h1>Touch Code</h1>
+
+<h3>Overview</h3>
+
 This project focuses on segmenting and processing Braille characters from images using YOLOv8 for detection and CNN-based classification for recognition. Instead of predicting the Braille characters directly, YOLOv8 is utilized solely for detecting and extracting character coordinates, enabling precise cropping of the input image.
 
 Workflow
