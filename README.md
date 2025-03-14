@@ -19,10 +19,10 @@ Text Reconstruction & Formatting
 The recognized characters are compiled into an array and sorted based on spacing between detected characters.
 Spaces and line breaks are determined based on the relative distances between cropped segments.
 The final translated text is reconstructed and formatted for output.
-Features
-✅ Automated Braille Character Detection via YOLOv8
-✅ CNN-Based Character Prediction for accurate recognition
-✅ Dynamic Image Cropping & Sorting based on spatial positioning
-✅ Space & Line Detection for structured text formatting
+Features <br>
+✅ Automated Braille Character Detection via YOLOv8 <br>
+✅ CNN-Based Character Prediction for accurate recognition <br>
+✅ Dynamic Image Cropping & Sorting based on spatial positioning <br>
+✅ Space & Line Detection for structured text formatting <br><br>
 
 This project provides an efficient pipeline for extracting and translating Braille text from images, making it a valuable tool for accessibility and assistive technology applications.
