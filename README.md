@@ -4,18 +4,20 @@
 
 This project focuses on segmenting and processing Braille characters from images using YOLOv8 for detection and CNN-based classification for recognition. Instead of predicting the Braille characters directly, YOLOv8 is utilized solely for detecting and extracting character coordinates, enabling precise cropping of the input image.
 
-Workflow
-Image Segmentation & Cropping
-
+<h4>Workflow</h4>
+<b>Image Segmentation & Cropping</b>
+<br><br>
 The input image is processed using YOLOv8, which detects individual Braille characters and provides their bounding box coordinates.
 The detected characters are cropped and saved locally, with filenames dynamically assigned based on their position in the image.
-The sorting follows a structured format, starting from the top-left corner and proceeding left to right, then moving line by line downward.
-Character Recognition
-
+The sorting follows a structured format, starting from the top-left corner and proceeding left to right, then moving line by line downward. <br>
+<br><br>
+<b>Character Recognition</b>
+<br><br>
 Each cropped Braille segment is passed through a CNN-based prediction model trained on a dataset of 600–800 images per character.
 The model predicts the corresponding Braille character, forming the basis of the final translation.
-Text Reconstruction & Formatting
-
+<br><br>
+<b>Text Reconstruction & Formatting</b>
+<br><br>
 The recognized characters are compiled into an array and sorted based on spacing between detected characters.
 Spaces and line breaks are determined based on the relative distances between cropped segments.
 The final translated text is reconstructed and formatted for output.
